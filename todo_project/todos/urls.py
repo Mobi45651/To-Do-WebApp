@@ -7,6 +7,6 @@ router = DefaultRouter()
 router.register('todos', TodoViewSet)
 
 urlpatterns = [
-    path('', home),              # 👈 YOUR UI PAGE
-    path('api/', include(router.urls)),  # 👈 API
+    path('', home),              
+    path('api/', include(router.urls)), 
 ]
