@@ -9,15 +9,15 @@ A responsive, decoupled task management application. I built this project as par
 It features a custom vanilla JavaScript frontend that communicates asynchronously with a RESTful Python backend.
 
 ## 🚀 Features
-* **Asynchronous UI:** Add, complete, and delete tasks without reloading the page using the `fetch` API[cite: 7].
-* **RESTful Backend:** Full CRUD endpoints handled through Django REST Framework (DRF) viewsets and routers[cite: 2, 3].
+* **Asynchronous UI:** Add, complete, and delete tasks without reloading the page using the `fetch` API.
+* **RESTful Backend:** Full CRUD endpoints handled through Django REST Framework (DRF) viewsets and routers.
 * **Persistent Storage:** Configured with a MySQL database to securely store task data and completion status.
-* **Responsive Design:** Clean, mobile-friendly interface built with custom CSS and Flexbox[cite: 8].
+* **Responsive Design:** Clean, mobile-friendly interface built with custom CSS and Flexbox.
 
 ## 🛠️ Tech Stack
-* **Frontend:** HTML5, CSS3, Vanilla JavaScript[cite: 6, 7, 8]
-* **Backend:** Python, Django, Django REST Framework (DRF)[cite: 1, 2, 3]
-* **Database:** MySQL[cite: 9]
+* **Frontend:** HTML5, CSS3, Vanilla JavaScript
+* **Backend:** Python, Django, Django REST Framework (DRF)
+* **Database:** MySQL
 
 * To Recreate this you will need django,mysqlclient libraries in python....
 * Credit:
