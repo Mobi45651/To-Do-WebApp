@@ -3,7 +3,6 @@ window.onload = loadTodos;
 const btn = document.getElementById("btn");
 const ul = document.getElementById("todoList");
 
-// ADD TODO
 btn.addEventListener("click", async () => {
     const todoInput = document.getElementById("TODO");
 
@@ -28,7 +27,6 @@ btn.addEventListener("click", async () => {
 });
 
 
-//  LOAD TODOS (FROM DJANGO → YOUR UI)
 async function loadTodos() {
     const res = await fetch("http://127.0.0.1:8000/api/todos/");
     const data = await res.json();
@@ -67,7 +65,6 @@ async function loadTodos() {
 }
 
 
-//  CHECK / UNCHECK (SAVE TO DB)
 ul.addEventListener("change", async (e) => {
     if (e.target.type === "checkbox") {
         const li = e.target.closest("li");
@@ -88,7 +85,6 @@ ul.addEventListener("change", async (e) => {
 });
 
 
-//  DELETE TODO
 ul.addEventListener("click", async (e) => {
     if (e.target.classList.contains("Del")) {
         const li = e.target.closest("li");
@@ -103,7 +99,6 @@ ul.addEventListener("click", async (e) => {
 });
 
 
-// 💬 EMPTY MESSAGE (your original logic fixed)
 function checkMessage() {
     const todoList = document.getElementById("todoList");
     const main = document.getElementById("main");
